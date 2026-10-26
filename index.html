@@ -3,43 +3,325 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio website for Abubeker Mohammedamin, a web developer." />
-    <title>Abubeker Mohammedamin — Web Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Abubeker Mohammedamin, a full-stack developer focused on thoughtful, practical web products."
+    />
+    <title>Abubeker Mohammedamin | Full-Stack Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="glow glow-one"></div><div class="glow glow-two"></div>
     <header class="site-header">
-      <a class="logo" href="#top" aria-label="Home">AM<span>.</span></a>
-      <button class="menu-button" aria-label="Open navigation" aria-expanded="false">Menu</button>
-      <nav><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Go to homepage">
+          <span class="brand-mark">AM</span><span class="brand-dot">.</span>
+        </a>
+
+        <button class="menu-button" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          Menu
+        </button>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#work">Projects</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
     </header>
 
     <main id="top">
-      <section class="hero">
-        <p class="eyebrow">Available for selected projects · 2026</p>
-        <h1>I build websites that feel <em>alive.</em></h1>
-        <p class="intro">I’m Abubeker, a web developer focused on crisp, useful digital experiences for people and ambitious small teams.</p>
-        <div class="hero-actions"><a class="button primary" href="#work">See my work <span>↘</span></a><a class="text-link" href="#contact">Let's work together</a></div>
-        <div class="hero-note"><span></span> Based anywhere · Working everywhere</div>
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Full-stack developer · available for selected work</p>
+          <h1>
+            I build thoughtful digital products that feel clear, useful, and resilient.
+          </h1>
+          <p class="intro">
+            I’m Abubeker Mohammedamin, a full-stack developer working across the frontend and backend to create web apps that are easy to understand and easier to maintain.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#work">View projects</a>
+            <a class="button secondary" href="#contact">Get in touch</a>
+          </div>
+
+          <ul class="hero-meta" aria-label="Core strengths">
+            <li>Web application development</li>
+            <li>Responsive frontends</li>
+            <li>Practical, maintainable code</li>
+          </ul>
+        </div>
+
+        <aside class="hero-panel" aria-label="Developer profile summary">
+          <div class="panel-card">
+            <p class="panel-label">Current focus</p>
+            <h2>Designing clean interfaces and building dependable systems.</h2>
+            <div class="mini-stack" aria-label="Technology stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+        </aside>
       </section>
 
-      <section class="work" id="work">
-        <div class="section-heading"><p class="eyebrow">Selected work</p><h2>Good ideas, made tangible.</h2></div>
-        <div class="project-grid">
-          <article class="project project-orange"><div class="project-visual visual-one"><div class="browser"><i></i><i></i><i></i><b>studio / noa</b><strong>Move<br/>with<br/>purpose.</strong></div></div><div class="project-meta"><div><p class="project-number">01</p><h3>Noa Movement</h3><p>Brand site · 2026</p></div><a href="#contact" aria-label="Ask about Noa Movement">↗</a></div></article>
-          <article class="project project-blue">< ndiv class="project-visual visual-two"><div class="metric-card"><small>MONTHLY REACH</small><strong>48.2K</strong><div class="chart"><span></span><span></span><span></span><span></span><span></span><span></span></div></div></div><div class="project-meta"><div><p class="project-number">02</p><h3>Pulse Analytics</h3><p>Product dashboard · 2026</p></div><a href="#contact" aria-label="Ask about Pulse Analytics">↗</a></div></article>
-          <article class="project project-lime"><div class="project-visual visual-three"><div class="poster"><small>THE LOCAL<br/>JOURNAL</small><strong>Stories<br/>from<br/>here.</strong><b>VOL. 04</b></div></div><div class="project-meta"><div><p class="project-number">03</p><h3>The Local Journal</h3><p>Editorial platform · 2025</p></div><a href="#contact" aria-label="Ask about The Local Journal">↗</a></div></article>
+      <section class="section container" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>I care about clarity over noise.</h2>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-text">
+            <p>
+              I’m a developer who likes to solve real problems with simple, solid systems. My work tends to focus on usability, maintainability, and making interfaces feel intentional instead of overloaded.
+            </p>
+            <p>
+              I enjoy the full product lifecycle: understanding the problem, shaping the structure, building the interface, and making sure the final result is dependable for the people using it.
+            </p>
+          </div>
+
+          <div class="about-aside" aria-label="Profile details">
+            <div>
+              <span>Role</span>
+              <strong>Full-stack developer</strong>
+            </div>
+            <div>
+              <span>Approach</span>
+              <strong>Clean UI, practical logic</strong>
+            </div>
+            <div>
+              <span>Focus</span>
+              <strong>Web applications and dashboards</strong>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="about" id="about"><div class="about-label"><p class="eyebrow">A little about me</p></div><div><h2>Simple is not plain.<br/>It’s <em>intentional.</em></h2><p>I care about the small details that make a website memorable: a clear story, thoughtful movement, and an experience that works beautifully on every screen.</p><a class="text-link" href="#contact">More about my process ↘</a></div></section>
-      <section class="contact" id="contact"><p class="eyebrow">Have a project in mind?</p><h2>Let’s make something<br/><em>worth visiting.</em></h2><a class="email" href="mailto:hello@alexmorgan.dev">hello@alexmorgan.dev <span>↗</span></a></section>
+      <section class="section container" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">Selected projects</p>
+          <h2>Three projects that reflect the work I’m building.</h2>
+        </div>
+
+        <div class="project-list">
+          <article class="project project-rust">
+            <div class="project-visual" aria-hidden="true">
+              <div class="visual-block visual-blood">
+                <span class="label">Blood bank</span>
+                <strong>Donor + inventory</strong>
+              </div>
+            </div>
+
+            <div class="project-copy">
+              <div class="project-topline">
+                <span class="project-number">01</span>
+                <span class="project-tag">Project</span>
+              </div>
+              <h3>Blood Bank Management System</h3>
+              <p class="project-summary">
+                A system focused on the operational side of blood donation management, from donor information to stock visibility and request coordination.
+              </p>
+
+              <div class="project-details">
+                <div>
+                  <span>Problem</span>
+                  <p>Manual tracking of donors, stock levels, and requests can create delays in urgent situations and make decision-making harder.</p>
+                </div>
+                <div>
+                  <span>Technology status</span>
+                  <p>Project name is confirmed from the current portfolio context. Source code and deployment links are not yet available in this repository.</p>
+                </div>
+              </div>
+
+              <div class="feature-list">
+                <h4>Potential scope to confirm from source</h4>
+                <ul>
+                  <li>Donor registration and query workflows</li>
+                  <li>Blood inventory tracking</li>
+                  <li>Request and administration handling</li>
+                </ul>
+              </div>
+
+              <div class="project-links">
+                <a href="#" aria-disabled="true" tabindex="-1">Source unavailable</a>
+                <a href="#" aria-disabled="true" tabindex="-1">Demo unavailable</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project-slate">
+            <div class="project-visual" aria-hidden="true">
+              <div class="visual-block visual-lms">
+                <span class="label">Academic project</span>
+                <strong>Course + learner</strong>
+              </div>
+            </div>
+
+            <div class="project-copy">
+              <div class="project-topline">
+                <span class="project-number">02</span>
+                <span class="project-tag">Final project</span>
+              </div>
+              <h3>Learning Management System (LMS)</h3>
+              <p class="project-summary">
+                A college-focused learning platform designed to support course delivery, access to learning materials, and learner administration in a structured academic setting.
+              </p>
+
+              <div class="project-details">
+                <div>
+                  <span>Problem</span>
+                  <p>Traditional academic workflows often spread course information, materials, and student records across disconnected channels.</p>
+                </div>
+                <div>
+                  <span>Technology status</span>
+                  <p>The project is referenced as an academic final project, but the implementation details and source repository are not currently linked in this portfolio repo.</p>
+                </div>
+              </div>
+
+              <div class="feature-list">
+                <h4>Potential scope to confirm from source</h4>
+                <ul>
+                  <li>Course and content management</li>
+                  <li>Student account access</li>
+                  <li>Assessment and material delivery workflows</li>
+                </ul>
+              </div>
+
+              <div class="project-links">
+                <a href="#" aria-disabled="true" tabindex="-1">Source unavailable</a>
+                <a href="#" aria-disabled="true" tabindex="-1">Demo unavailable</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project-olive">
+            <div class="project-visual" aria-hidden="true">
+              <div class="visual-block visual-stack">
+                <span class="label">Full stack</span>
+                <strong>App + data layer</strong>
+              </div>
+            </div>
+
+            <div class="project-copy">
+              <div class="project-topline">
+                <span class="project-number">03</span>
+                <span class="project-tag">Portfolio placeholder</span>
+              </div>
+              <h3>Full-Stack Web Application</h3>
+              <p class="project-summary">
+                This slot is intentionally kept as a placeholder because no stronger project repository is present in the current portfolio codebase. Once the actual application repo is added, this project can be replaced with the verified implementation.
+              </p>
+
+              <div class="project-details">
+                <div>
+                  <span>Problem</span>
+                  <p>This section is reserved for a complete application that solves a real user or business workflow, once the source project is confirmed.</p>
+                </div>
+                <div>
+                  <span>Current status</span>
+                  <p>Project details are intentionally not invented. Please add the repository or deployment link to replace this placeholder with the final project entry.</p>
+                </div>
+              </div>
+
+              <div class="feature-list">
+                <h4>Pending verification</h4>
+                <ul>
+                  <li>Application purpose and target users</li>
+                  <li>Authenticated flows or admin functions</li>
+                  <li>Source repository and production link</li>
+                </ul>
+              </div>
+
+              <div class="project-links">
+                <a href="#" aria-disabled="true" tabindex="-1">Source pending</a>
+                <a href="#" aria-disabled="true" tabindex="-1">Demo pending</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">Technical skills</p>
+          <h2>Tools I work with comfortably.</h2>
+        </div>
+
+        <div class="skills-grid" aria-label="Technical skills list">
+          <div class="skill-card">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Responsive design</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>Backend</h3>
+            <ul>
+              <li>PHP</li>
+              <li>Web application logic</li>
+              <li>API integration</li>
+              <li>Database-driven workflows</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>Data & systems</h3>
+            <ul>
+              <li>MySQL</li>
+              <li>CRUD workflows</li>
+              <li>Form handling</li>
+              <li>Operational tooling</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section container" id="contact">
+        <p class="eyebrow">Contact</p>
+        <div class="contact-layout">
+          <div>
+            <h2>Let’s build something useful together.</h2>
+          </div>
+
+          <div class="contact-actions" aria-label="Contact links">
+            <a href="https://github.com/Abubeker-Mohammedamin" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="#top">Back to top</a>
+            <span class="contact-note">Email and LinkedIn can be added once confirmed.</span>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer><a class="logo" href="#top">AM<span>.</span></a><p>© 2026 Abubeker Mohammedamin</p><div><a href="#">LinkedIn</a><a href="#">GitHub</a><a href="#">Instagram</a></div></footer>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand" href="#top" aria-label="Go to homepage">
+          <span class="brand-mark">AM</span><span class="brand-dot">.</span>
+        </a>
+
+        <p>© 2026 Abubeker Mohammedamin</p>
+
+        <div class="footer-links" aria-label="Footer links">
+          <a href="https://github.com/Abubeker-Mohammedamin" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="#work">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
