@@ -1,5 +1,5 @@
 const menuButton = document.querySelector('.menu-button');
-const nav = document.querySelector('.main-nav');
+const nav = document.querySelector('nav');
 
 if (menuButton && nav) {
   menuButton.addEventListener('click', () => {
@@ -8,7 +8,7 @@ if (menuButton && nav) {
     menuButton.textContent = isOpen ? 'Close' : 'Menu';
   });
 
-  nav.querySelectorAll('a').forEach((link) => {
+  document.querySelectorAll('nav a').forEach((link) => {
     link.addEventListener('click', () => {
       nav.classList.remove('open');
       menuButton.setAttribute('aria-expanded', 'false');

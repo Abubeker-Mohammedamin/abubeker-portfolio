@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio of Abubeker Mohammedamin, a full-stack developer focused on thoughtful, practical web products."
+      content="Portfolio of Abubeker Mohammedamin, a full-stack developer building practical web systems."
     />
     <title>Abubeker Mohammedamin | Full-Stack Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,307 +18,204 @@
   </head>
   <body>
     <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="#top" aria-label="Go to homepage">
-          <span class="brand-mark">AM</span><span class="brand-dot">.</span>
-        </a>
+      <a class="logo" href="#top" aria-label="Go to top">AM<span>.</span></a>
 
-        <button class="menu-button" type="button" aria-label="Toggle navigation" aria-expanded="false">
-          Menu
-        </button>
+      <button class="menu-button" aria-label="Open navigation" aria-expanded="false">Menu</button>
 
-        <nav class="main-nav" aria-label="Main navigation">
-          <a href="#work">Projects</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
+      <nav aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
     <main id="top">
-      <section class="hero container">
-        <div class="hero-copy">
-          <p class="eyebrow">Full-stack developer · available for selected work</p>
-          <h1>
-            I build thoughtful digital products that feel clear, useful, and resilient.
-          </h1>
-          <p class="intro">
-            I’m Abubeker Mohammedamin, a full-stack developer working across the frontend and backend to create web apps that are easy to understand and easier to maintain.
-          </p>
+      <section class="hero">
+        <p class="eyebrow">Full-stack developer · building practical systems</p>
+        <h1>
+          I design and build tools that help people
+          <span>learn, manage, and work more effectively.</span>
+        </h1>
+        <p class="intro">
+          I’m Abubeker Mohammedamin, a developer focused on reliable web experiences,
+          strong product thinking, and full-stack systems that solve real problems.
+        </p>
 
-          <div class="hero-actions">
-            <a class="button primary" href="#work">View projects</a>
-            <a class="button secondary" href="#contact">Get in touch</a>
-          </div>
-
-          <ul class="hero-meta" aria-label="Core strengths">
-            <li>Web application development</li>
-            <li>Responsive frontends</li>
-            <li>Practical, maintainable code</li>
-          </ul>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">View projects</a>
+          <a class="button secondary" href="#contact">Contact me</a>
         </div>
 
-        <aside class="hero-panel" aria-label="Developer profile summary">
-          <div class="panel-card">
-            <p class="panel-label">Current focus</p>
-            <h2>Designing clean interfaces and building dependable systems.</h2>
-            <div class="mini-stack" aria-label="Technology stack">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-              <span>PHP</span>
-              <span>MySQL</span>
-            </div>
-          </div>
-        </aside>
+        <ul class="hero-meta" aria-label="Developer highlights">
+          <li>React</li>
+          <li>TypeScript</li>
+          <li>Node.js</li>
+          <li>PostgreSQL</li>
+        </ul>
       </section>
 
-      <section class="section container" id="about">
-        <div class="section-heading">
+      <section class="about" id="about">
+        <div class="section-header">
           <p class="eyebrow">About</p>
-          <h2>I care about clarity over noise.</h2>
+          <h2>Clean systems. Thoughtful interfaces. Useful outcomes.</h2>
         </div>
 
-        <div class="about-layout">
-          <div class="about-text">
-            <p>
-              I’m a developer who likes to solve real problems with simple, solid systems. My work tends to focus on usability, maintainability, and making interfaces feel intentional instead of overloaded.
-            </p>
-            <p>
-              I enjoy the full product lifecycle: understanding the problem, shaping the structure, building the interface, and making sure the final result is dependable for the people using it.
-            </p>
-          </div>
-
-          <div class="about-aside" aria-label="Profile details">
-            <div>
-              <span>Role</span>
-              <strong>Full-stack developer</strong>
-            </div>
-            <div>
-              <span>Approach</span>
-              <strong>Clean UI, practical logic</strong>
-            </div>
-            <div>
-              <span>Focus</span>
-              <strong>Web applications and dashboards</strong>
-            </div>
-          </div>
+        <div class="about-grid">
+          <p>
+            I enjoy turning ideas into working products: dashboards, student platforms,
+            internal tools, and end-to-end applications that balance usability with solid
+            engineering.
+          </p>
+          <p>
+            My work usually sits at the intersection of product thinking and implementation,
+            with attention to maintainability, accessibility, and product clarity.
+          </p>
         </div>
       </section>
 
-      <section class="section container" id="work">
-        <div class="section-heading">
+      <section class="work" id="work">
+        <div class="section-header">
           <p class="eyebrow">Selected projects</p>
-          <h2>Three projects that reflect the work I’m building.</h2>
+          <h2>Three recent builds.</h2>
         </div>
 
-        <div class="project-list">
-          <article class="project project-rust">
-            <div class="project-visual" aria-hidden="true">
-              <div class="visual-block visual-blood">
-                <span class="label">Blood bank</span>
-                <strong>Donor + inventory</strong>
+        <div class="project-grid">
+          <article class="project project-lms">
+            <div class="project-topline">
+              <span class="project-number">01</span>
+              <span class="project-label">Learning Management System</span>
+            </div>
+
+            <h3>Learning Management System</h3>
+            <p class="project-summary">
+              A college-focused academic platform for managing courses, materials,
+              assessments, participation, and learning workflows in one place.
+            </p>
+
+            <div class="project-meta">
+              <div>
+                <span>Problem</span>
+                <p>
+                  Universities and colleges need a single system to coordinate classes,
+                  coursework, student records, and communication without fragmenting work.
+                </p>
+              </div>
+
+              <div>
+                <span>Stack</span>
+                <p>React, TypeScript, Vite, Express, Prisma, PostgreSQL, Jitsi</p>
               </div>
             </div>
 
-            <div class="project-copy">
-              <div class="project-topline">
-                <span class="project-number">01</span>
-                <span class="project-tag">Project</span>
-              </div>
-              <h3>Blood Bank Management System</h3>
-              <p class="project-summary">
-                A system focused on the operational side of blood donation management, from donor information to stock visibility and request coordination.
-              </p>
+            <ul class="feature-list">
+              <li>Role-based access for admin, teacher, and student workflows.</li>
+              <li>Course and class management with academic resources and assessments.</li>
+              <li>Live session support, participation tracking, and grading flows.</li>
+            </ul>
 
-              <div class="project-details">
-                <div>
-                  <span>Problem</span>
-                  <p>Manual tracking of donors, stock levels, and requests can create delays in urgent situations and make decision-making harder.</p>
-                </div>
-                <div>
-                  <span>Technology status</span>
-                  <p>Project name is confirmed from the current portfolio context. Source code and deployment links are not yet available in this repository.</p>
-                </div>
-              </div>
-
-              <div class="feature-list">
-                <h4>Potential scope to confirm from source</h4>
-                <ul>
-                  <li>Donor registration and query workflows</li>
-                  <li>Blood inventory tracking</li>
-                  <li>Request and administration handling</li>
-                </ul>
-              </div>
-
-              <div class="project-links">
-                <a href="#" aria-disabled="true" tabindex="-1">Source unavailable</a>
-                <a href="#" aria-disabled="true" tabindex="-1">Demo unavailable</a>
-              </div>
+            <div class="project-links">
+              <a href="https://github.com/Kifle4323/lucy_lMS" target="_blank" rel="noreferrer">Source code</a>
             </div>
           </article>
 
-          <article class="project project-slate">
-            <div class="project-visual" aria-hidden="true">
-              <div class="visual-block visual-lms">
-                <span class="label">Academic project</span>
-                <strong>Course + learner</strong>
+          <article class="project project-blood">
+            <div class="project-topline">
+              <span class="project-number">02</span>
+              <span class="project-label">Blood Bank Management System</span>
+            </div>
+
+            <h3>Blood Bank Management System</h3>
+            <p class="project-summary">
+              A practical system for managing donation operations, blood inventory,
+              donor records, and request coordination for healthcare support.
+            </p>
+
+            <div class="project-meta">
+              <div>
+                <span>Problem</span>
+                <p>
+                  Blood banks need dependable tracking of available stock, donor activity,
+                  and urgent request handling across operational workflows.
+                </p>
+              </div>
+
+              <div>
+                <span>Stack</span>
+                <p>Full-stack web app with database-backed operational flows</p>
               </div>
             </div>
 
-            <div class="project-copy">
-              <div class="project-topline">
-                <span class="project-number">02</span>
-                <span class="project-tag">Final project</span>
-              </div>
-              <h3>Learning Management System (LMS)</h3>
-              <p class="project-summary">
-                A college-focused learning platform designed to support course delivery, access to learning materials, and learner administration in a structured academic setting.
-              </p>
+            <ul class="feature-list">
+              <li>Donor registration and record management.</li>
+              <li>Blood stock and inventory visibility.</li>
+              <li>Request handling and administrative operational support.</li>
+            </ul>
 
-              <div class="project-details">
-                <div>
-                  <span>Problem</span>
-                  <p>Traditional academic workflows often spread course information, materials, and student records across disconnected channels.</p>
-                </div>
-                <div>
-                  <span>Technology status</span>
-                  <p>The project is referenced as an academic final project, but the implementation details and source repository are not currently linked in this portfolio repo.</p>
-                </div>
-              </div>
-
-              <div class="feature-list">
-                <h4>Potential scope to confirm from source</h4>
-                <ul>
-                  <li>Course and content management</li>
-                  <li>Student account access</li>
-                  <li>Assessment and material delivery workflows</li>
-                </ul>
-              </div>
-
-              <div class="project-links">
-                <a href="#" aria-disabled="true" tabindex="-1">Source unavailable</a>
-                <a href="#" aria-disabled="true" tabindex="-1">Demo unavailable</a>
-              </div>
+            <div class="project-links">
+              <span class="placeholder-link">Repository details not published</span>
             </div>
           </article>
 
-          <article class="project project-olive">
-            <div class="project-visual" aria-hidden="true">
-              <div class="visual-block visual-stack">
-                <span class="label">Full stack</span>
-                <strong>App + data layer</strong>
+          <article class="project project-fullstack">
+            <div class="project-topline">
+              <span class="project-number">03</span>
+              <span class="project-label">Full-stack web application</span>
+            </div>
+
+            <h3>Full-stack web application</h3>
+            <p class="project-summary">
+              A general-purpose application built around a complete user-facing workflow,
+              API layer, and persistent data model.
+            </p>
+
+            <div class="project-meta">
+              <div>
+                <span>Problem</span>
+                <p>
+                  Many internal and customer-facing tools need a clean interface backed by a
+                  reliable database and business logic layer.
+                </p>
+              </div>
+
+              <div>
+                <span>Stack</span>
+                <p>Frontend + backend application with database-driven workflows</p>
               </div>
             </div>
 
-            <div class="project-copy">
-              <div class="project-topline">
-                <span class="project-number">03</span>
-                <span class="project-tag">Portfolio placeholder</span>
-              </div>
-              <h3>Full-Stack Web Application</h3>
-              <p class="project-summary">
-                This slot is intentionally kept as a placeholder because no stronger project repository is present in the current portfolio codebase. Once the actual application repo is added, this project can be replaced with the verified implementation.
-              </p>
+            <ul class="feature-list">
+              <li>Client-side interface and server-side processing.</li>
+              <li>Database-backed data management.</li>
+              <li>Structured workflow for users and administrators.</li>
+            </ul>
 
-              <div class="project-details">
-                <div>
-                  <span>Problem</span>
-                  <p>This section is reserved for a complete application that solves a real user or business workflow, once the source project is confirmed.</p>
-                </div>
-                <div>
-                  <span>Current status</span>
-                  <p>Project details are intentionally not invented. Please add the repository or deployment link to replace this placeholder with the final project entry.</p>
-                </div>
-              </div>
-
-              <div class="feature-list">
-                <h4>Pending verification</h4>
-                <ul>
-                  <li>Application purpose and target users</li>
-                  <li>Authenticated flows or admin functions</li>
-                  <li>Source repository and production link</li>
-                </ul>
-              </div>
-
-              <div class="project-links">
-                <a href="#" aria-disabled="true" tabindex="-1">Source pending</a>
-                <a href="#" aria-disabled="true" tabindex="-1">Demo pending</a>
-              </div>
+            <div class="project-links">
+              <span class="placeholder-link">Project details to be added</span>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="section container" id="skills">
-        <div class="section-heading">
-          <p class="eyebrow">Technical skills</p>
-          <h2>Tools I work with comfortably.</h2>
-        </div>
+      <section class="contact" id="contact">
+        <p class="eyebrow">Let’s build something useful.</p>
+        <h2>Open to full-stack work and product-focused builds.</h2>
 
-        <div class="skills-grid" aria-label="Technical skills list">
-          <div class="skill-card">
-            <h3>Frontend</h3>
-            <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaScript</li>
-              <li>Responsive design</li>
-            </ul>
-          </div>
-
-          <div class="skill-card">
-            <h3>Backend</h3>
-            <ul>
-              <li>PHP</li>
-              <li>Web application logic</li>
-              <li>API integration</li>
-              <li>Database-driven workflows</li>
-            </ul>
-          </div>
-
-          <div class="skill-card">
-            <h3>Data & systems</h3>
-            <ul>
-              <li>MySQL</li>
-              <li>CRUD workflows</li>
-              <li>Form handling</li>
-              <li>Operational tooling</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="section contact-section container" id="contact">
-        <p class="eyebrow">Contact</p>
-        <div class="contact-layout">
-          <div>
-            <h2>Let’s build something useful together.</h2>
-          </div>
-
-          <div class="contact-actions" aria-label="Contact links">
-            <a href="https://github.com/Abubeker-Mohammedamin" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="#top">Back to top</a>
-            <span class="contact-note">Email and LinkedIn can be added once confirmed.</span>
-          </div>
+        <div class="contact-list" aria-label="Contact links">
+          <a href="mailto:abumohr234@gmail.com">Email</a>
+          <a href="tel:+251944079857">Phone</a>
+          <a href="https://t.me/abuki_i" target="_blank" rel="noreferrer">Telegram</a>
+          <a href="https://github.com/Abubeker-Mohammedamin" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://abubekermohammed.github.io/" target="_blank" rel="noreferrer">Portfolio</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <a class="brand" href="#top" aria-label="Go to homepage">
-          <span class="brand-mark">AM</span><span class="brand-dot">.</span>
-        </a>
-
-        <p>© 2026 Abubeker Mohammedamin</p>
-
-        <div class="footer-links" aria-label="Footer links">
-          <a href="https://github.com/Abubeker-Mohammedamin" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="#work">Projects</a>
-          <a href="#contact">Contact</a>
-        </div>
+      <a class="logo" href="#top" aria-label="Back to top">AM<span>.</span></a>
+      <p>© 2026 Abubeker Mohammedamin</p>
+      <div class="footer-links">
+        <a href="https://github.com/Abubeker-Mohammedamin" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://abubekermohammed.github.io/" target="_blank" rel="noreferrer">Website</a>
       </div>
     </footer>
 
